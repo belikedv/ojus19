@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.clas1{
+	font-style:monospace;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.header {
+  padding: 2px;
+  background: #044F67;
+  color: #f1f1f1;
+  text-align: center;
+  font-size: 10px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+p{
+	font-size: 25px;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+*{
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 0px;
+    height: auto;
+    background-color: white;
+    border: 0px solid;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    background-color: #4B77BE;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 580px) {
+    .column {
+        width: 100%;
+        margin-top: 10px; 
+           }
+    button{
+	width: 100%;
+	height: 50px;
+	display: inline-block;	
+}
+
+
+}
+.div1{
+	text-align: center;
+}
+.link{
+	padding: 10px;
+}
+
+
+
+/*Standup Comedy Html*/
+.standup{
+	margin-top: 100px;
+	margin-left: 30px;
+	margin-right:  30px;
+}
+button{
+	text-align: center;
+	width: 250px;
+	height: 50px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 5px;
+	display: inline-block;
+	border: 1px solid #1F4788;
+	background-color: #4B77BE;
+	color: white;	
+}
+
+
+/*Pubg*/
+.main{
+	margin-top: 100px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+button{
+	text-align: center;
+	width: 20%;
+	height: 50px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 5px;
+	display: inline-block;
+	border: 1px solid #1F4788;
+	background-color: #4B77BE;
+	color: white;	
+}
+
+
+@media screen and (max-width: 580px){
+
+}
+
+h4{
+	color: grey;
+}
+h3{color: black;}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="register.css"> 
+    <script type="text/javascript" src="register.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 style="text-align: center;">Register for OJUS 2019</h1>
+    <hr>
+
+    <!-- <label for="email"><b> Full Name</b></label>
+    <input type="text" placeholder="Enter Email" id="email" name="email" required> -->
+    <label for="Events"><b> Events</b></label><br>
+    <div class="event" style="width: 400px">
+      <select id="events" onchange="setForm(this.value)"/>
+        <option value="Standup COmedy" id="standup">Standup Comedy</option>
+        <option value="Pub-G" id="pubg">Pub-G</option>
+        <option value="Minute to win it" id="mtwi">Minute to win it</option>
+        <option value="Mr and Ms Apsit" id="mrms">Mr and Ms Apsit</option>
+        <option value="Tressure Hunt" id="hunt">Tressure Hunt</option>
+        <option value="Quiz" id="quiz">Quiz</option>
+        <option value="Dancing" id="dance">Dancing</option>
+        <option value="Singing" id="sing">Singing </option>
+        <option value="Drama" id="drama">Drama </option>
+      </select>
+      </div>
+      <div class="clearfix">
+      <button type="button" class="register">Register</button>
+    </div>
+
+    <div id="ravan">
+      <form id="standupkaform"></form>
+      <input type="text" name="text123" value="text123">
+      <input type="text" name="email123" value="email123">
+    </div>
+    <div id="thor" style="display: none">
+      <form id="pubgkaform"></form>
+      <input type="text" name="text345" value="text345">
+      <input type="text" name="email345" value="email3454">
+    </div>
+  </div>
+</form>
+
+</body>
+</html>

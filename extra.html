@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ojus 2019</title>
+<script type="text/javascript"  src="register.js">
+</script>
+<link rel="stylesheet" type="text/css" href="register.css">
+
+</head>
+<body>
+  <center>
+            <div class="header">
+            <h2>Registration</h2>
+          </div><br><br><br><br>
+                      <div class="main">
+                                <form>                             
+                                    <select id="select1" onchange="setForm(this.value)">
+                                            <option value="Standup Comedy" id="standup">Standup Comedy</option>
+                                            <option value="Pub-G" id="pubg">Pub-G</option>
+                                            <option value="Minute to win it" id="mtwi">Minute to win it</option>
+                                            <option value="Mr and Ms Apsit" id="mrms">Mr and Ms Apsit</option>
+                                            <option value="Tressure Hunt" id="hunt">Tressure Hunt</option>
+                                            <option value="Quiz" id="quiz">Quiz</option>
+                                            <option value="Dancing" id="dance">Dancing</option>
+                                            <option value="Singing" id="sing">Singing </option>
+                                            <option value="Drama" id="drama">Drama </option>
+                                    </select>
+                                  </form>
+                                    <br><br><br>
+                                    <div id="form1">
+                                    <label style="font-size: 20px;text-decoration: underline;">Standup Comedy</label><br><br> <a href="standup.html" style="text-decoration: none">Rules for Standup Comedy</a><br><br><br>
+                                      <form id="standupkaform" name="form1" method="post">
+                                          <input type="text" name="name" placeholder="Name" required>
+                                          <input type="text" name="contact" placeholder="Contact" maxlength="10" minlength="10" pattern="[789][0-9]{9}" required>
+                                          <input type="text" name="year" placeholder="Year (Eg: FE-IT)" required>
+                                          <div class="clearfix">
+                                            <button type="submit" class="register" name="standup" value="standup" formaction="register.php">Register</button>
+                                          </div>
+                                      </form>
+                                    </div>
+
+                                    <div  id="form2" style="display: none">
+                                        <label style="font-size: 20px;text-decoration: underline;">Pub-G</label><br><br> <a href="pubg.html" style="text-decoration: none">Rules for Pub-G</a><br><br><br>
+                                        <form name="secondform" method="post">
+                                        <input type="text" name="teamname" placeholder="Team Name" required><br>
+                                        <input type="text" name="name1" placeholder="Enter head member name" required>
+                                        <input type="text" name="year1" placeholder="Year of 1st member(Eg: FE-IT)"required >
+                                        <input type="text" name="contact1" placeholder="Contact of Head" maxlength="10" minlength="10" pattern="[789][0-9]{9}" required>
+                                        <input type="text" name="name2" placeholder="Enter second member name" required><br>
+                                        <input type="text" name="year2" placeholder="Year of 2nd member(Eg: FE-IT)" required>
+                                        <input type="text" name="name3" placeholder="Enter third member name" required><br>
+                                        <input type="text" name="year3" placeholder="Year of 3rd member(Eg: FE-IT)" required>
+                                        <input type="text" name="name4" placeholder="Enter forth member name" required><br>
+                                        <input type="text" name="year4" placeholder="Year of 4th member(Eg: FE-IT)" required>
+                                        <input type="text" name="name5" placeholder="Enter fifth member name" required><br>
+                                        <input type="text" name="year5" placeholder="Year of 5th member(Eg: FE-IT)" required>
+                                        <div class="clearfix">
+                                              <button type="submit" class="register" name="pubg" name="pubg" formaction="register.php">Register</button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div  id="form3" style="display: none">
+                                    <label style="font-size: 20px;text-decoration: underline;">Minute To Win It</label><br><br> <a href="mtwi.html" style="text-decoration: none">Rules for Minute To Win It</a><br><br><br>
+                                    <form name="secondform" method="post">
+                                        <input type="text" name="name" placeholder="Name" required>
+                                          <input type="text" name="contact" placeholder="Contact" maxlength="10" minlength="10" pattern="[789][0-9]{9}" required>
+                                          <input type="text" name="year" placeholder="Year (Eg: FE-IT)" required>
+                                          <div class="clearfix">
+                                            <button type="submit" class="register" name="mtwi" value="mtwi" formaction="register.php">Register</button>
+                                          </div>
+                                    </form>
+                                    </div>
+
+                                    <div  id="form4" style="display: none">
+                                    <label style="font-size: 20px;text-decoration: underline;">Mr & Ms Apsit</label><br> <br><a href="mrms.html" style="text-decoration: none">Rules for Mr & Ms Apsit</a><br><br><br>
+                                    <form name="secondform" method="post">
+                                          <input type="text" name="name" placeholder="Name" required>
+                                          <input type="text" name="contact" placeholder="Contact" maxlength="10" minlength="10" pattern="[789][0-9]{9}" required>
+                                          <input type="text" name="year" placeholder="Year (Eg: FE-IT)" required>
+                                          <div class="clearfix">
+                                            <button type="submit" class="register" name="mrms" value="mrms" formaction="register.php">Register</button>
+                                          </div>
+                                    </form>
+                                    </div>
+
+                                    <div  id="form5" style="display: none">
+                                    <label style="font-size: 20px;text-decoration: underline;">Tressure Hunt</label><br><br> <a href="tressurehunt.html" style="text-decoration: none">Rules for Tressure Hunt</a><br><br><br>
+                                    <form name="secondform" method="post">
+                                        <input type="text" name="teamname" placeholder="Team Name" required><br>
+                                        <input type="text" name="name1" placeholder="Enter head member name" required>
+                                        <input type="text" name="year1" placeholder="Year of 1st member(Eg: FE-IT)" required>
+                                        <input type="text" name="contact1" placeholder="Contact of Head" maxlength="10" minlength="10" pattern="[789][0-9]{9}" required>
+                                        <input type="text" name="name2" placeholder="Enter second member name" required><br>
+                                        <input type="text" name="year2" placeholder="Year of 2nd member(Eg: FE-IT)"required >
+                                        <input type="text" name="name3" placeholder="Enter third member name"required><br>
+                                        <input type="text" name="year3" placeholder="Year of 3rd member(Eg: FE-IT)"required >
+                                        <input type="text" name="name4" placeholder="Enter forth member name"required><br>
+                                        <input type="text" name="year4" placeholder="Year of 4th member(Eg: FE-IT)" required>
+                                        <div class="clearfix">
+                                              <button type="submit" class="register" name="hunt" name="hunt" formaction="register.php">Register</button>
+                                            </div>
+                                    </form>
+                                    </div>
+
+                                    <div  id="form6" style="display: none">
+                                    <label style="font-size: 20px;text-decoration: underline;">Quiz</label><br><br> <a href="quiz.html" style="text-decoration: none">Rules for Quiz</a><br><br><br>
+                                    <form name="secondform" method="post">
+                                          <input type="text" name="teamname" placeholder="Team Name"required><br>
+                                        <input type="text" name="name1" placeholder="Enter head member name"required>
+                                        <input type="text" name="year1" placeholder="Year of 1st member(Eg: FE-IT)" required>
+                                        <input type="text" name="contact1" placeholder="Contact of Head" maxlength="10" minlength="10" pattern="[789][0-9]{9}"required>
+                                        <input type="text" name="name2" placeholder="Enter second member name"required><br>
+                                        <input type="text" name="year2" placeholder="Year of 2nd member(Eg: FE-IT)" required>
+                                        <input type="text" name="name3" placeholder="Enter third member name"required><br>
+                                        <input type="text" name="year3" placeholder="Year of 3rd member(Eg: FE-IT)" requiredrequired>
+                                        <input type="text" name="name4" placeholder="Enter forth member name"required><br>
+                                        <input type="text" name="year4" placeholder="Year of 4th member(Eg: FE-IT)" required>
+                                        <div class="clearfix">
+                                              <button type="submit" class="register" name="quiz" name="quiz" formaction="register.php">Register</button>
+                                            </div>
+                                    </form>
+                                    </div>
+
+                                    <div  id="form7" style="display: none">
+                                    <label style="font-size: 20px;text-decoration: underline;">Dancing</label><br><br> <a href="dance.html" style="text-decoration: none">Rules for Dancing</a><br><br><br>
+                                    <form name="secondform" method="post">
+                                          <input type="text" name="teamname" placeholder="Team Name"required><br>
+                                        <input type="text" name="name1" placeholder="Enter head member name"required>
+                                        <input type="text" name="year1" placeholder="Year of 1st member(Eg: FE-IT)" required>
+                                        <input type="text" name="contact1" placeholder="Contact of Head" maxlength="10" minlength="10" pattern="[789][0-9]{9}"required>
+                                        <input type="text" name="name2" placeholder="Enter second member name"><br>
+                                        <input type="text" name="year2" placeholder="Year of 2nd member(Eg: FE-IT)" >
+                                        <input type="text" name="name3" placeholder="Enter third member name"><br>
+                                        <input type="text" name="year3" placeholder="Year of 3rd member(Eg: FE-IT)" >
+                                        <input type="text" name="name4" placeholder="Enter forth member name"><br>
+                                        <input type="text" name="year4" placeholder="Year of 4th member(Eg: FE-IT)" >
+                                        <input type="text" name="name5" placeholder="Enter fifth member name"><br>
+                                        <input type="text" name="year5" placeholder="Year of 5th member(Eg: FE-IT)" >
+                                        <div class="clearfix">
+                                              <button type="submit" class="register" name="dance" name="dance" formaction="register.php">Register</button>
+                                            </div>
+                                    </form>
+                                    </div>
+
+                                    <div  id="form8" style="display: none">
+                                    <label style="font-size: 20px;text-decoration: underline;">Singing</label><br><br> <a href="singing.html" style="text-decoration: none">Rules for Singing</a><br><br><br>
+                                    <form name="secondform" method="post">
+                                          <input type="text" name="name" placeholder="Name"required>
+                                          <input type="text" name="contact" placeholder="Contact" maxlength="10" minlength="10" pattern="[789][0-9]{9}"required>
+                                          <input type="text" name="year" placeholder="Year (Eg: FE-IT)" required>
+                                          <div class="clearfix">
+                                            <button type="submit" class="register" name="sing" value="sing" formaction="register.php">Register</button>
+                                          </div>
+                                    </form>
+                                    </div>
+
+                                    <div  id="form9" style="display: none">
+                                    <label style="font-size: 20px;text-decoration: underline;">Drama</label><br><br> <a href="drama.html" style="text-decoration: none">Rules for Drama</a><br><br><br>
+                                    <form name="secondform" method="post">
+                                           <input type="text" name="teamname" placeholder="Team Name"required><br>
+                                        <input type="text" name="name1" placeholder="Enter head member name"required>
+                                        <input type="text" name="year1" placeholder="Year of 1st member(Eg: FE-IT)" >
+                                        <input type="text" name="contact1" placeholder="Contact of Head" maxlength="10" minlength="10" pattern="[789][0-9]{9}"required>
+                                        <input type="text" name="name2" placeholder="Enter second member name"required><br>
+                                        <input type="text" name="year2" placeholder="Year of 2nd member(Eg: FE-IT)"required >
+                                        <input type="text" name="name3" placeholder="Enter third member name"required><br>
+                                        <input type="text" name="year3" placeholder="Year of 3rd member(Eg: FE-IT)"required>
+                                        <input type="text" name="name4" placeholder="Enter forth member name"><br>
+                                        <input type="text" name="year4" placeholder="Year of 4th member(Eg: FE-IT)" >
+                                        <input type="text" name="name5" placeholder="Enter fifth member name"><br>
+                                        <input type="text" name="year5" placeholder="Year of 5th member(Eg: FE-IT)" >
+                                        <div class="clearfix">
+                                              <button type="submit" class="register" name="drama" name="drama" formaction="register.php">Register</button>
+                                            </div>
+                                    </form>
+                                 </div>
+                               </div>
+</center>
+</body>
+</html>
